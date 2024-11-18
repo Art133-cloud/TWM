@@ -30,22 +30,18 @@
         }
     }
 }
-@media only screen and (max-width: 1808px) {
-    .contentSectionSlider .texts h2 {
-        font-size: 35px;
-    }
-}
-@media only screen and (max-width: 1701px) {
+@media only screen and (max-width: 1019px) {
   .contentSectionSlider {
-     align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 50px;
     .texts {
-      padding-top: 50px;
-        h2 {
-          font-size: 25px;
-        }
-        .textUnder {
-          padding: 40px 0 60px 0;
-        }
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .textUnder {
+        padding: 40px 0;
+      }
     }
   }
 }

@@ -69,4 +69,29 @@
     }
     
   }
+  @media only screen and (max-width: 414px) {
+    width: 350px;
+    padding: 15px;
+    .formDiscover {
+      width: 300px;
+    }
+  }
+  @media only screen and (max-width: 381px) {
+    width: 330px;
+    padding: 15px;
+  }
+  @media only screen and (max-width: 348px) {
+    width: 300px;
+    padding: 15px 25px;
+    .formDiscover {
+      width: 250px;
+    }
+  }
+  @media only screen and (max-width: 334px) {
+    width: 280px;
+    padding: 15px;
+    .formDiscover {
+      width: 250px;
+    }
+  }
 }

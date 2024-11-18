@@ -1,18 +1,17 @@
 .slider {
     position: relative;
-    max-width: 1184px;
     height: 569px;
     margin: 0 auto;
     overflow: hidden;
   }
   
   .sliderWrapper {
+    max-width: 1184px;
     display: flex;
   }
   
   .sliderItems {
     display: flex;
-    gap: 104px;
     transition: transform 0.5s ease;
   }
   
@@ -20,10 +19,9 @@
     min-width: 330px;
     height: 400px;
     box-sizing: border-box;
-    // text-align: center;
     position: relative;
     p {
-        font-family: var(--font-family);
+      font-family: var(--font-family);
         font-weight: 700;
         font-size: 28px;
         color: #fff;
@@ -38,9 +36,10 @@
   
   .caption {
     position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 30px;
+    margin-left: 30px;
+    // left: 50%;
+    // transform: translateX(-50%);
     font-size: 24px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -117,16 +116,72 @@
     }
 }
 
-@media screen and (max-width: 1666px) {
-    .slider {
-        width: 800px;
-    }
+@media screen and (max-width: 1866px) {
+  .slider {
+    margin: 0;
+  }
+  .sliderWrapper {
+    width: 784px;
+    margin: 0;
     .sliderItem {
-      min-width: calc((100% - 104px) / 2);  // Adjust for two slides visible
-    }
+      max-width: 400px;
+      }
+  }
 }
-@media screen and (max-width: 1024px) {
-    .sliderItem {
-      min-width: calc((100% - 80px) / 1);  // Adjust for one slide visible
+@media screen and (max-width: 1401px) {
+  .sliderWrapper {
+    width: 400px;
+  }
+  .arrowsBasicSlider  {
+    right: 20px;    
+    .lineArrowBasicSlider {
+      width: 150px;
     }
+  }
+}
+@media only screen and (max-width: 1019px) {
+  .slider {
+    margin: 0;
+  }
+  .sliderWrapper {
+    width: 784px;
+    margin: 0;
+    .sliderItem {
+      max-width: 400px;
+      }
+  }
+}
+@media only screen and (max-width: 793px) {
+  .slider {
+    height: 480px;
+    margin: 0 auto;
+  }
+  .sliderWrapper {
+    width: 350px;
+  }
+  .arrowsBasicSlider  {
+    right: 10%;
+    .lineArrowBasicSlider {
+      width: 100px;
+    }    
+  }
+}
+@media only screen and (max-width: 413px) {
+  .sliderWrapper {
+    width: 300px;
+  }
+  .arrowsBasicSlider  {
+    right: 10%;
+    .lineArrowBasicSlider {
+      width: 50px;
+    }    
+  }
+  // @media only screen and (max-width: 365px) {
+  //   .sliderWrapper {
+  //     width: 270px;
+  //   }
+  //   .arrowsBasicSlider {
+  //     right: 4%;
+  //   }
+  // }
 }
